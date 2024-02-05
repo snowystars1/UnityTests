@@ -1,0 +1,70 @@
+Documentation and Learning:
+	Unity:
+		Very detailed documentation with C# functions and exmaples
+		Tons of youtube tutorials for just about everything
+	Unreal:
+		Documentation is usually either in C++ entirely, or in blueprints entirely and can be annoying to find what you
+		want. People online reccommend looking through the engine's source code to understand some things.
+		Tons of youtube tutorials for just about everything
+	Unity wins
+	
+
+Performance:
+	Data oriented design:
+		Unity: DOTS - Farther along in development, more usage and stability
+		Unreal: has Mass Entity System - Not as far along, but it exists and is being worked on.
+	Unity wins
+
+	Optimization/Auto-LOD: Optimizing polygons by automatically applying LOD based on camera distance to a mesh.
+		Unity: Nano-Tech, not sure if its fully released or what, but it looks decent.
+		Unreal: Nanite, highly developed and well optimized, one of the selling points of UE5
+	Unreal wins
+
+	Lighting:
+		Unity: HDRP
+		Unreal: Lumen
+	No clear winner, both look really nice depending on the scene
+
+	Graphics:
+		Unity: URP, BuiltIn, and HDRP
+			URP optimizes performance, built for platforms where performance is critical
+			BuiltIn is a balance of both URP and HDRP, but has mostly been phased out
+			HDRP optimized visuals and is built for high performance hardware
+			The pipelines support DirectX11 and 12, Metal (macOS), and OpenGL Core
+		Unreal: DirectX11 and DirectX12
+			Very high quality, built for high performance hardware
+	No clear winner, depends on the usage
+
+	Code Speed:
+		Unity: C#
+			Unity has access to interesting features like IL2CPP which compiles C# into C++, then to machine code
+			Unity also has the Burst Compiler which can greatly improve code, but comes at the drawback of
+				requiring that you use a subset of C# (A SMALL SUBSET)
+		Unreal: C++
+			Fairly standard
+	No clear winner. Unreal5 uses C++17 which has lots of modern C# features, and Unity has many features
+	to reduce any drawbacks from C#.
+			
+
+Ease of Use:
+	Unity: Unity's flavor of C# is fairly straightforward and easy to use.
+	Unreal: Unreal's flavor of C++ is pretty complicated, however they also have Blueprints
+		Blueprints make coding very easy, but might come at a fairly large performance cost.
+No clear winner
+
+Compatability:
+	Platforms:
+		Both are fairly comparable Linux, Windows, MacOS, Mobile (Mobile might be better in Unity), etc
+	No clear winner
+
+	VR:
+		Both have solid VR support however Unity is used widely in the VR space with games like
+		VRChat being built on Unity, therefore there is tons more documentation and resources
+	Unity wins
+
+Developer Tools:
+	Visual Studio:
+		Unity: One can install Unity tools for visual studio in the VS installer.
+			You can do mixed C#/C++ debugging to step from C# code to a C++ dll
+		Unreal: One can install the "C++ game development" kit in the VS installer.
+No clear winner
